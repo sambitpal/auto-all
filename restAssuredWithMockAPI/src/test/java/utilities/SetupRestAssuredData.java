@@ -14,7 +14,7 @@ public class SetupRestAssuredData extends WireMockSetup {
 		WireMockSetup.setUpWireMock();
 		WireMockSetup.SetupGetStub();
 		WireMockSetup.setupPostStub();
-		RestAssured.baseURI = "http://localhost:" + PORT;
+		RestAssured.baseURI = "http://localhost:" + wireMockServer.port();
 		rBuilder.setAccept("application/json").addHeader("x-api-key", "reqres-free-v1");
 		reqSpec = rBuilder.build();
 		return reqSpec;

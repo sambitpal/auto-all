@@ -14,6 +14,7 @@ public class BaseTest {
 	CustomReport rep = new CustomReport();
 	SetupRestAssuredData srad = new SetupRestAssuredData();
 	protected RequestSpecification rSpecObj;
+	
 	@BeforeSuite
 	public void init() {
 		CustomReport.setExtent();
