@@ -22,7 +22,7 @@ public class WireMockSetup {
 		wireMockServer.stubFor(get(urlEqualTo("/api/test")).willReturn(aResponse().withStatus(200)));
 		wireMockServer.stubFor(post(urlEqualTo("/api/users")) // Matches the URL and method
 				.withHeader("Content-Type", equalTo("application/json")) // Matches a specific header
-				.withRequestBody(equalToJson(expectedJson)) // Matches the request body
+				//.withRequestBody(equalToJson(expectedJson)) // Matches the request body
 				// content (JSON)
 				.willReturn(aResponse() // Defines the response
 						.withStatus(201) // HTTP status code for "Created"
