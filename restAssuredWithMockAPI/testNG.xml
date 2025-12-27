@@ -6,6 +6,7 @@
   </listeners>
   <test name="PostUserTests">
     <classes>
+      <class name="appTests.AppiumTest"/>
       <class name="apiTests.PostUserTests"/>
       <class name="uiTests.SearchProductTests"/>
     </classes>

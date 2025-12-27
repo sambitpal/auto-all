@@ -7,7 +7,7 @@
 
     <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
     <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,12 +21,11 @@
      -->
   </head>
 
-  <body>
-    <div class="top-banner-root">
+  <body>    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Automation_Suite" class="navigator-link">
-              <span class="suite-name border-failed">Automation-Suite</span>
+              <span class="suite-name border-passed">Automation-Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Automation_Suite" class="navigator-link ">
-                    <span>C:\Users\sambit\Desktop\auto\restAssuredWithMockAPI\testNG.xml</span>
+                    <span>C:\Users\sambit\git\auto-all\restAssuredWithMockAPI\testNG.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Automation_Suite" class="hide-methods failed suite-Automation_Suite"> (hide)</a> <!-- hide-methods failed suite-Automation_Suite -->
-                      <a href="#" panel-name="suite-Automation_Suite" class="show-methods failed suite-Automation_Suite"> (show)</a> <!-- show-methods failed suite-Automation_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Automation_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Automation_Suite" title="ApiTests.PostUserTests" class="method navigator-link" hash-for-method="VerifyPostUser">VerifyPostUser</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Automation_Suite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,7 +103,22 @@
                     <div class="method-list-content passed suite-Automation_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Automation_Suite" title="ApiTests.PostUserTests" class="method navigator-link" hash-for-method="VerifyGetUser">VerifyGetUser</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Automation_Suite" title="uiTests.SearchProductTests" class="method navigator-link" hash-for-method="SearchForItem">SearchForItem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="apiTests.PostUserTests" class="method navigator-link" hash-for-method="VerifyGetUser">VerifyGetUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="apiTests.PostUserTests" class="method navigator-link" hash-for-method="VerifyPostUser">VerifyPostUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="appTests.AppiumTest" class="method navigator-link" hash-for-method="sampleAppiumTest">sampleAppiumTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Automation_Suite -->
@@ -133,48 +133,40 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Automation_Suite" class="panel Automation_Suite">
-          <div class="suite-Automation_Suite-class-failed">
+          <div class="suite-Automation_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">ApiTests.PostUserTests</span>
+              <img src="passed.png"/>
+              <span class="class-name">appTests.AppiumTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyPostUser">
-                  </a> <!-- VerifyPostUser -->
-                  <span class="method-name">VerifyPostUser</span>
-                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;201&gt; but was &lt;404&gt;.
-
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at ApiTests.PostUserTests.VerifyPostUser(PostUserTests.java:18)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
+                  <a name="sampleAppiumTest">
+                  </a> <!-- sampleAppiumTest -->
+                  <span class="method-name">sampleAppiumTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Automation_Suite-class-failed -->
+          </div> <!-- suite-Automation_Suite-class-passed -->
           <div class="suite-Automation_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">ApiTests.PostUserTests</span>
+              <span class="class-name">uiTests.SearchProductTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchForItem">
+                  </a> <!-- SearchForItem -->
+                  <span class="method-name">SearchForItem</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Suite-class-passed -->
+          <div class="suite-Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apiTests.PostUserTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -184,12 +176,19 @@ Expected status code &lt;201&gt; but was &lt;404&gt;.
                   <span class="method-name">VerifyGetUser</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyPostUser">
+                  </a> <!-- VerifyPostUser -->
+                  <span class="method-name">VerifyPostUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Automation_Suite-class-passed -->
         </div> <!-- panel Automation_Suite -->
         <div panel-name="test-xml-Automation_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\sambit\Desktop\auto\restAssuredWithMockAPI\testNG.xml</span>
+            <span class="header-content">C:\Users\sambit\git\auto-all\restAssuredWithMockAPI\testNG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -201,7 +200,9 @@ Expected status code &lt;201&gt; but was &lt;404&gt;.
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;PostUserTests&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;ApiTests.PostUserTests&quot;/&gt;
+      &lt;class name=&quot;appTests.AppiumTest&quot;/&gt;
+      &lt;class name=&quot;apiTests.PostUserTests&quot;/&gt;
+      &lt;class name=&quot;uiTests.SearchProductTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- PostUserTests --&gt;
 &lt;/suite&gt; &lt;!-- Automation-Suite --&gt;
@@ -215,7 +216,7 @@ Expected status code &lt;201&gt; but was &lt;404&gt;.
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">PostUserTests (1 class)</span>
+                <span class="test-name">PostUserTests (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -241,20 +242,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'VerifyGetUser')
-data.setCell(0, 2, 'ApiTests.PostUserTests')
-data.setCell(0, 3, 895);
+data.setCell(0, 2, 'apiTests.PostUserTests')
+data.setCell(0, 3, 1267);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'VerifyPostUser')
-data.setCell(1, 2, 'ApiTests.PostUserTests')
-data.setCell(1, 3, 69);
+data.setCell(1, 2, 'apiTests.PostUserTests')
+data.setCell(1, 3, 130);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'sampleAppiumTest')
+data.setCell(2, 2, 'appTests.AppiumTest')
+data.setCell(2, 3, 19);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'SearchForItem')
+data.setCell(3, 2, 'uiTests.SearchProductTests')
+data.setCell(3, 3, 1);
 window.suiteTableData['Automation_Suite']= { tableData: data, tableDiv: 'times-div-Automation_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 964 ms</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Automation_Suite">
               </div> <!-- times-div-Automation_Suite -->
             </div> <!-- times-div -->
@@ -269,9 +278,27 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Automation_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">uiTests.SearchProductTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">inits</span>
+                <br/>
+                <span class="ignored-method-name">tearDowns</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">apiTests.PostUserTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">inits</span>
+                <br/>
+                <span class="ignored-method-name">tearDowns</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Automation_Suite" class="panel">
@@ -280,24 +307,78 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">ApiTests.PostUserTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">appTests.AppiumTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">init</span>
+                <span class="method-name">inits</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apiTests.PostUserTests</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">7833 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">uiTests.SearchProductTests</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">8763 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">appTests.AppiumTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">11341 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">sampleAppiumTest</span>
+                <span class="method-start">11344 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11368 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apiTests.PostUserTests</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">VerifyGetUser</span>
-                <span class="method-start">1046 ms</span>
+                <span class="method-start">12067 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">VerifyPostUser</span>
-                <span class="method-start">1944 ms</span>
+                <span class="method-start">13336 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-suite after">
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">uiTests.SearchProductTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">SearchForItem</span>
+                <span class="method-start">13468 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apiTests.PostUserTests</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">2045 ms</span>
+                <span class="method-start">13470 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">uiTests.SearchProductTests</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">13470 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">appTests.AppiumTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDowns</span>
+                <span class="method-start">13661 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,0 +1,13 @@
+appTests\AppiumTest.class
+setup\BaseTestMobile.class
+setup\BaseTestUI.class
+utilities\CustomReport.class
+utilities\RequestBodyBuilder.class
+setup\BaseTest.class
+listeners\CustomTestListener.class
+utilities\SetupRestAssuredData.class
+utilities\WireMockSetup.class
+setup\BaseTestApi.class
+apiTests\PostUserTests.class
+uiTests\SearchProductTests.class
+Pojo\UserDTO.class

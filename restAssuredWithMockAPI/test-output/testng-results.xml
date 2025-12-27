@@ -1,91 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-26T22:26:42 IST" name="Automation-Suite" finished-at="2025-12-26T22:26:43 IST" duration-ms="993">
+  <suite started-at="2025-12-27T20:43:29 IST" name="Automation-Suite" finished-at="2025-12-27T20:43:35 IST" duration-ms="5814">
     <groups>
     </groups>
-    <test started-at="2025-12-26T22:26:42 IST" name="PostUserTests" finished-at="2025-12-26T22:26:43 IST" duration-ms="993">
-      <class name="ApiTests.PostUserTests">
-        <test-method is-config="true" signature="init()[pri:0, instance:ApiTests.PostUserTests@110844f6]" started-at="2025-12-26T22:26:41 IST" name="init" finished-at="2025-12-26T22:26:42 IST" duration-ms="1023" status="PASS">
+    <test started-at="2025-12-27T20:43:29 IST" name="PostUserTests" finished-at="2025-12-27T20:43:35 IST" duration-ms="5814">
+      <class name="apiTests.PostUserTests">
+        <test-method is-config="true" signature="init()[pri:0, instance:apiTests.PostUserTests@17ca8b92]" started-at="2025-12-27T20:43:29 IST" name="init" finished-at="2025-12-27T20:43:30 IST" duration-ms="930" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="VerifyGetUser()[pri:0, instance:ApiTests.PostUserTests@110844f6]" started-at="2025-12-26T22:26:42 IST" name="VerifyGetUser" finished-at="2025-12-26T22:26:43 IST" duration-ms="895" status="PASS">
+        <test-method signature="VerifyGetUser()[pri:0, instance:apiTests.PostUserTests@17ca8b92]" started-at="2025-12-27T20:43:34 IST" name="VerifyGetUser" finished-at="2025-12-27T20:43:35 IST" duration-ms="1267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyGetUser -->
-        <test-method signature="VerifyPostUser()[pri:0, instance:ApiTests.PostUserTests@110844f6]" started-at="2025-12-26T22:26:43 IST" name="VerifyPostUser" finished-at="2025-12-26T22:26:43 IST" duration-ms="69" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Expected status code <201> but was <404>.
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <201> but was <404>.
-
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at ApiTests.PostUserTests.VerifyPostUser(PostUserTests.java:18)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="VerifyPostUser()[pri:0, instance:apiTests.PostUserTests@17ca8b92]" started-at="2025-12-27T20:43:35 IST" name="VerifyPostUser" finished-at="2025-12-27T20:43:35 IST" duration-ms="130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyPostUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ApiTests.PostUserTests@110844f6]" started-at="2025-12-26T22:26:43 IST" name="tearDown" finished-at="2025-12-26T22:26:43 IST" duration-ms="272" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:apiTests.PostUserTests@17ca8b92]" started-at="2025-12-27T20:43:35 IST" name="tearDown" finished-at="2025-12-27T20:43:35 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- ApiTests.PostUserTests -->
+      </class> <!-- apiTests.PostUserTests -->
+      <class name="uiTests.SearchProductTests">
+        <test-method is-config="true" signature="init()[pri:0, instance:uiTests.SearchProductTests@5491f68b]" started-at="2025-12-27T20:43:30 IST" name="init" finished-at="2025-12-27T20:43:33 IST" duration-ms="2550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="SearchForItem()[pri:0, instance:uiTests.SearchProductTests@5491f68b]" started-at="2025-12-27T20:43:35 IST" name="SearchForItem" finished-at="2025-12-27T20:43:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchForItem -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:uiTests.SearchProductTests@5491f68b]" started-at="2025-12-27T20:43:35 IST" name="tearDown" finished-at="2025-12-27T20:43:35 IST" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- uiTests.SearchProductTests -->
+      <class name="appTests.AppiumTest">
+        <test-method is-config="true" signature="inits()[pri:0, instance:appTests.AppiumTest@5ddf0d24]" started-at="2025-12-27T20:43:22 IST" name="inits" finished-at="2025-12-27T20:43:29 IST" duration-ms="7825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inits -->
+        <test-method is-config="true" signature="init()[pri:0, instance:appTests.AppiumTest@5ddf0d24]" started-at="2025-12-27T20:43:33 IST" name="init" finished-at="2025-12-27T20:43:33 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="sampleAppiumTest()[pri:0, instance:appTests.AppiumTest@5ddf0d24]" started-at="2025-12-27T20:43:33 IST" name="sampleAppiumTest" finished-at="2025-12-27T20:43:33 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sampleAppiumTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:appTests.AppiumTest@5ddf0d24]" started-at="2025-12-27T20:43:33 IST" name="tearDown" finished-at="2025-12-27T20:43:34 IST" duration-ms="696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDowns()[pri:0, instance:appTests.AppiumTest@5ddf0d24]" started-at="2025-12-27T20:43:35 IST" name="tearDowns" finished-at="2025-12-27T20:43:35 IST" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDowns -->
+      </class> <!-- appTests.AppiumTest -->
     </test> <!-- PostUserTests -->
   </suite> <!-- Automation-Suite -->
 </testng-results>

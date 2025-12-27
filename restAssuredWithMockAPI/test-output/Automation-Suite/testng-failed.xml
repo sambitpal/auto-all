@@ -6,13 +6,15 @@
   </listeners>
   <test thread-count="5" name="PostUserTests(failed)">
     <classes>
-      <class name="ApiTests.PostUserTests">
+      <class name="appTests.AppiumTest">
         <methods>
           <include name="init"/>
+          <include name="sampleAppiumTest"/>
+          <include name="tearDowns"/>
+          <include name="inits"/>
           <include name="tearDown"/>
-          <include name="VerifyPostUser"/>
         </methods>
-      </class> <!-- ApiTests.PostUserTests -->
+      </class> <!-- appTests.AppiumTest -->
     </classes>
   </test> <!-- PostUserTests(failed) -->
 </suite> <!-- Failed suite [Automation-Suite] -->
