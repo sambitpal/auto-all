@@ -8,7 +8,7 @@
   <dependency>
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
-        <version>7.4.0</version> <!-- Use a recent version -->
+        <version>7.8.0</version> <!-- Updated to the latest stable version -->
         <scope>test</scope>
     </dependency>
     <!-- WireMock Dependency -->
@@ -34,6 +34,12 @@
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
     <version>5.1.2</version>
+</dependency>
+
+<dependency>
+    <groupId>io.appium</groupId>
+    <artifactId>java-client</artifactId>
+    <version>10.0.0</version>
 </dependency>
     <dependency>
     <groupId>org.apache.logging.log4j</groupId>

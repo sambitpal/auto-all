@@ -1,2 +1,13 @@
-C:\Users\sambit\Desktop\auto\restAssuredWithMockAPI\src\test\java\listeners\TestListener.java
-C:\Users\sambit\Desktop\auto\restAssuredWithMockAPI\src\test\java\setup\BaseTest.java
+C:\Users\sambit\git\auto-all\restAssuredWithMockAPI\src\test\java\apiTests\PostUserTests.java
+C:\Users\sambit\git\auto-all\restAssuredWithMockAPI\src\test\java\appTests\AppiumTest.java
+C:\Users\sambit\git\auto-all\restAssuredWithMockAPI\src\test\java\listeners\CustomTestListener.java
+C:\Users\sambit\git\auto-all\restAssuredWithMockAPI\src\test\java\Pojo\UserDTO.java
+C:\Users\sambit\git\auto-all\restAssuredWithMockAPI\src\test\java\setup\BaseTest.java
+C:\Users\sambit\git\auto-all\restAssuredWithMockAPI\src\test\java\setup\BaseTestApi.java
+C:\Users\sambit\git\auto-all\restAssuredWithMockAPI\src\test\java\setup\BaseTestMobile.java
+C:\Users\sambit\git\auto-all\restAssuredWithMockAPI\src\test\java\setup\BaseTestUI.java
+C:\Users\sambit\git\auto-all\restAssuredWithMockAPI\src\test\java\uiTests\SearchProductTests.java
+C:\Users\sambit\git\auto-all\restAssuredWithMockAPI\src\test\java\utilities\CustomReport.java
+C:\Users\sambit\git\auto-all\restAssuredWithMockAPI\src\test\java\utilities\RequestBodyBuilder.java
+C:\Users\sambit\git\auto-all\restAssuredWithMockAPI\src\test\java\utilities\SetupRestAssuredData.java
+C:\Users\sambit\git\auto-all\restAssuredWithMockAPI\src\test\java\utilities\WireMockSetup.java
