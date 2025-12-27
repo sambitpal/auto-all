@@ -8,20 +8,21 @@ import com.github.tomakehurst.wiremock.core.WireMockConfiguration;
 
 public class WireMockSetup {
 
-	public static final int PORT = 8089;
+	public static final int PORT = 0;
 	public static WireMockServer wireMockServer;
 
 	public static void setUpWireMock() {
+		String expectedJson = "{ \"Name\": \"Sammy\", \"Job\": \"QA\" }";
 		// Start the WireMock server
 		wireMockServer = new WireMockServer(WireMockConfiguration.options().globalTemplating(true).port(PORT)
 				.notifier(new ConsoleNotifier(true)));
 		wireMockServer.start();
 		// Configure RestAssured base URI to point to the mock server
-		System.out.println("WireMock server started on port " + PORT);
+		System.out.println("WireMock server started on port " + wireMockServer.port());
 		wireMockServer.stubFor(get(urlEqualTo("/api/test")).willReturn(aResponse().withStatus(200)));
 		wireMockServer.stubFor(post(urlEqualTo("/api/users")) // Matches the URL and method
 				.withHeader("Content-Type", equalTo("application/json")) // Matches a specific header
-				.withRequestBody(equalToJson("{\"name\":\"Test\"}")) // Matches the request body
+				.withRequestBody(equalToJson(expectedJson)) // Matches the request body
 				// content (JSON)
 				.willReturn(aResponse() // Defines the response
 						.withStatus(201) // HTTP status code for "Created"
