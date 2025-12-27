@@ -7,6 +7,7 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.Status;
 
+import setup.BaseTest;
 import utilities.CustomReport;
 
 public class CustomTestListener extends CustomReport implements ITestListener {

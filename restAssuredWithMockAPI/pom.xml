@@ -51,5 +51,10 @@
         <version>2.4.240</version> <!-- Check for the latest version -->
         <scope>test</scope>
     </dependency>
+    <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.39.0</version>
+</dependency>
   </dependencies>
 </project>

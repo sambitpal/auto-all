@@ -6,7 +6,8 @@
   </listeners>
   <test name="PostUserTests">
     <classes>
-      <class name="ApiTests.PostUserTests"/>
+      <class name="apiTests.PostUserTests"/>
+      <class name="uiTests.SearchProductTests"/>
     </classes>
   </test>
 </suite>

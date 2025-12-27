@@ -1,12 +1,12 @@
-package ApiTests;
+package apiTests;
 
 import static io.restassured.RestAssured.given;
 import org.testng.annotations.Test;
 import Pojo.UserDTO;
-import setup.BaseTest;
+import setup.BaseTestApi;
 import utilities.RequestBodyBuilder;
 
-public class PostUserTests extends BaseTest {
+public class PostUserTests extends BaseTestApi {
 	@Test
 	public void VerifyPostUser() {
 		String body = RequestBodyBuilder.postBodyProcessor(new UserDTO("Sammy", "QA"));
